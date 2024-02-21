@@ -28,4 +28,3 @@ class RPander(RPackage):
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))
-

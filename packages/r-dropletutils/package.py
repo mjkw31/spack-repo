@@ -2,18 +2,18 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDropletutils(RPackage):
 	"""Utilities for Handling Single-Cell Droplet Data
 
 	Provides a number of utility functions for handling single-cell (RNA-seq) data from droplet technologies such as 10X Genomics. This includes data loading from count matrices or molecule information files, identification of cells from empty droplets, removal of barcode-swapped pseudo-cells, and downsampling of the count matrix.
 	"""
 	
-	bioc = "DropletUtils" 
-	url = "https://www.bioconductor.org/packages/release/bioc/src/contrib/DropletUtils_1.22.0.tar.gz"
+	bioc = "DropletUtils"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DropletUtils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DropletUtils/DropletUtils_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="f1fe907e6269e652adc4607fdb335c41")
 

@@ -15,7 +15,7 @@ class RIgraph(RPackage):
 
 	cran = "igraph"
 
-	version("2.0.1", md5="ee16cb9dcb14e6f65e730ad12bc22846")
+	version("2.0.1.1", md5="eb05121b1c41105eff1ec879a9d2701e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

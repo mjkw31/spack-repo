@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RElliptic(RPackage):
 	"""Weierstrass and Jacobi Elliptic Functions
 
@@ -16,9 +16,9 @@ class RElliptic(RPackage):
 	"""
 	
 	homepage = "https://github.com/RobinHankin/elliptic.git"
-	cran = "elliptic" 
+	cran = "elliptic"
 
 	version("1.4-0", md5="eb083f4e62ee749a5eec9febb353a49f")
 
-	depends_on("r@2.5.0:", type=("build", "run"))
+	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
